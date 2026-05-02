@@ -82,3 +82,7 @@ COPY index.html /usr/share/nginx/html/index.html
 FROM ubuntu
 RUN apt-get update && apt-get install -y curl
 CMD ["echo", "Hello, Docker!"]
+
+FROM alpine:latest
+RUN apk update && apk add nano
+CMD "/bin/sh"]
